@@ -25,8 +25,24 @@ It cleans, structures, and stores the data in **CSV files** and optionally in **
   - `cleaned_linkedin_jobs.csv`
 
 
-## 🛠️ Installation & Setup
-### 1️⃣ **Clone the Repository**
-```bash
-git clone https://github.com/your-username/visa_friendly_job_scraper.git
-cd visa_friendly_job_scraper
+## AWS Cloud-Based Scraping Workflow
+For a more scalable and automated solution, the job scraping process can be deployed using AWS services. The following workflow is implemented:
+
+### Architecture
+1. **EventBridge:** Triggers the scraping process daily.
+2. **AWS Lambda:** Executes the job scraping script (Google Jobs & LinkedIn scraping) and stores the extracted data in an S3 bucket.
+3. **S3 Bucket:** Stores the CSV files containing job postings.
+4. **AWS Glue:** Crawls the CSV files and prepares the data for analysis.
+5. **Amazon Athena:** Queries and analyzes the crawled job postings.
+
+### Steps to Deploy on AWS
+1. **Create an S3 Bucket** to store scraped job postings.
+2. **Deploy the Scraping Script in AWS Lambda:**
+   - Convert the local Python scripts into a Lambda-compatible format.
+   - Package required dependencies in a Lambda Layer.
+3. **Set Up EventBridge to Trigger the Lambda Function:**
+   - Configure a rule to invoke Lambda daily.
+4. **Use AWS Glue to Crawl Data:**
+   - Set up an AWS Glue Crawler to process CSV files in S3.
+5. **Analyze Data with Amazon Athena:**
+   - Create an Athena table to run SQL queries on job postings.

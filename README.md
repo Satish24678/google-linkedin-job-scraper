@@ -27,6 +27,7 @@ It cleans, structures, and stores the data in **CSV files** and optionally in **
 
 ## AWS Cloud-Based Scraping Workflow
 For a more scalable and automated solution, the job scraping process can be deployed using AWS services. The following workflow is implemented:
+![AWS Job Scraper Workflow](AWS%20Job%20Scraper%20diagram.png)
 
 ### Architecture
 1. **EventBridge:** Triggers the scraping process daily.

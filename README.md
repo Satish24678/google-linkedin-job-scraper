@@ -1,23 +1,23 @@
-# VisaFriendly Job Scraper
+# Job Scraper
 
-## 📌 Overview
+## Overview
 This project is a **job data pipeline** that extracts **Data Engineer** job postings from:
 - **Google Jobs API** (via SerpAPI)
 - **LinkedIn Web Scraping** (via Selenium)
 
 It cleans, structures, and stores the data in **CSV files** and load into **PostgreSQL**.
 
-## 🚀 How It Works
-### 1️⃣ **Extract**
+## How It Works
+### **Extract**
 - **`google_job_scraper.py`** → Uses SerpAPI to extract Google job postings.
 - **`linkedin_job_scraper.py`** → Uses Selenium to scrape job listings from LinkedIn.
 
-### 2️⃣ **Transform**
+### **Transform**
 - Removes **duplicates**.
 - Ensures **data consistency**.
 - Converts **posting times** into readable formats.
 
-### 3️⃣ **Load**
+### **Load**
 - Stores the cleaned data in:
   - `google_jobs.csv`
   - `linkedin_jobs.csv`
@@ -25,7 +25,7 @@ It cleans, structures, and stores the data in **CSV files** and load into **Post
   - `cleaned_linkedin_jobs.csv`
 - Load Data into PostgreSQL Database
     
-### 4️⃣ **Automate Execution with a Cron Job**
+### **Automate Execution with a Cron Job**
 To run the scraper daily, add a cron job:
 
 ```sh

@@ -23,7 +23,8 @@ It cleans, structures, and stores the data in **CSV files** and optionally in **
   - `linkedin_jobs.csv`
   - `cleaned_google_jobs.csv`
   - `cleaned_linkedin_jobs.csv`
-
+- Load Data into PostgreSQL Database
+    
 ### 4️⃣ **Automate Execution with a Cron Job**
 To run the scraper daily, add a cron job:
 

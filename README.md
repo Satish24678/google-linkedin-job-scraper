@@ -24,7 +24,7 @@ It cleans, structures, and stores the data in **CSV files** and optionally in **
   - `cleaned_google_jobs.csv`
   - `cleaned_linkedin_jobs.csv`
 
-### 3️⃣ **Automate Execution with a Cron Job**
+### 4️⃣ **Automate Execution with a Cron Job**
 To run the scraper daily, add a cron job:
 
 ```sh

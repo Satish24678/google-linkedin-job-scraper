@@ -24,6 +24,19 @@ It cleans, structures, and stores the data in **CSV files** and optionally in **
   - `cleaned_google_jobs.csv`
   - `cleaned_linkedin_jobs.csv`
 
+### 3️⃣ **Automate Execution with a Cron Job**
+To run the scraper daily, add a cron job:
+
+```sh
+crontab -e
+```
+
+Add the following line to schedule the script every day at midnight:
+
+```sh
+0 0 * * * /usr/bin/python3 /path/to/linkedin_job_scraper.py
+0 0 * * * /usr/bin/python3 /path/to/google_job_scraper.py
+```
 
 ## AWS Cloud-Based Scraping Workflow
 For a more scalable and automated solution, the job scraping process can be deployed using AWS services. The following workflow is implemented:

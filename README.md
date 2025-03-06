@@ -2,8 +2,8 @@
 
 ## 📌 Overview
 This project is a **job data pipeline** that extracts **Data Engineer** job postings from:
-- **Google Jobs API** (via SerpAPI) – Fetches job listings from Google Jobs.
-- **LinkedIn Web Scraping** (via Selenium) - Extracts job postings directly from LinkedIn.
+- **Google Jobs API** (via SerpAPI)
+- **LinkedIn Web Scraping** (via Selenium)
 
 It cleans, structures, and stores the data in **CSV files** and load into **PostgreSQL**.
 

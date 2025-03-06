@@ -23,7 +23,7 @@ It cleans, structures, and stores the data in **CSV files** and optionally in **
   - `linkedin_jobs.csv`
   - `cleaned_google_jobs.csv`
   - `cleaned_linkedin_jobs.csv`
-  - **Optional:** Stores data in PostgreSQL.
+
 
 ## 🛠️ Installation & Setup
 ### 1️⃣ **Clone the Repository**

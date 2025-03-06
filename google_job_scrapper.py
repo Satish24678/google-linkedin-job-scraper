@@ -116,7 +116,7 @@ from sqlalchemy import create_engine
 
 # Database connection details
 DB_USER = "postgres"
-DB_PASSWORD = "my.SqL.486"
+DB_PASSWORD = "***********"
 DB_HOST = "[::1]"
 DB_PORT = "5432"  # Default PostgreSQL port
 DB_NAME = "Jobs"
